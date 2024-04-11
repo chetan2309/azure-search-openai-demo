@@ -21,10 +21,14 @@ class ChatApproach(Approach, ABC):
     ASSISTANT = "assistant"
 
     query_prompt_few_shots = [
-        {"role": USER, "content": "How did crypto do last year?"},
-        {"role": ASSISTANT, "content": "Summarize Cryptocurrency Market Dynamics from last year"},
-        {"role": USER, "content": "What are my health plans?"},
-        {"role": ASSISTANT, "content": "Show available health plans"},
+        {"role": USER, "content": "What's the best way to control weeds in my cornfield?"},
+        {"role": ASSISTANT, "content": "Recommendations for weed control in cornfields"},
+        {"role": USER, "content": "How can I improve soil fertility for better crop yields?"},
+        {"role": ASSISTANT, "content": "Strategies to enhance soil fertility and increase crop yields"},
+        {"role": USER, "content": "What's the most effective method for pest management in soybean crops?"},
+        {"role": ASSISTANT, "content": "Integrated pest management techniques for soybean crops"},
+        {"role": USER, "content": "Which fertilizer should I use for my wheat fields?"},
+        {"role": ASSISTANT, "content": "Recommendations for fertilizers suitable for wheat cultivation"},
     ]
     NO_RESPONSE = "0"
 
